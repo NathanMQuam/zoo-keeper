@@ -17,6 +17,17 @@ class Pokemon {
    }
 }
 
+
+
+
+
+
+
+
+
+// NOTE: All Pokemon sub-classes:
+// #region
+
 class Absol extends Pokemon {
    constructor (name, hp, level, gender) {
       super(name, hp, level, "dark", "", gender)
@@ -172,3 +183,5 @@ class Zeraora extends Pokemon {
       super(name, hp, level, "electric", "", "")
    }
 }
+
+//#endregion

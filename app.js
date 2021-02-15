@@ -19,7 +19,7 @@ console.log("The Axolotl:", fakemon.name, "is a Pokemon?:", fakemon.pokemon)
 // console.log(myMon);
 
 const pokemonInventory = [
-   new Absol(), 
+   new Absol("Abby", 100, 20, "Female"), 
    new Bulbasaur(),
    new Charmander(),
    new Ditto(),
@@ -49,3 +49,12 @@ const pokemonInventory = [
 pokemonInventory.push(new Zeraora())
 
 console.log(pokemonInventory);
+
+let myPC = new PC()
+//myPC.addToBox(pokemonInventory[0])
+
+pokemonInventory.forEach(mon => {
+   myPC.addToBox(mon, mon.type1)
+   mon.type2 != "" ? myPC.addToBox(mon, mon.type2) : undefined
+})
+console.log(myPC.boxList);
