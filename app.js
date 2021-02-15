@@ -10,10 +10,42 @@
 
 
 let fakemon = new Axolotl("Mudkip", 5, 0, "male")
-console.log(fakemon.name, "Is Pokemon?:", fakemon.pokemon)
+console.log("The Axolotl:", fakemon.name, "is a Pokemon?:", fakemon.pokemon)
 
-let myMon = new Absol()
-console.log(myMon);
+// let myMon = new Absol()
+// console.log(myMon);
 
-myMon = new Xatu()
-console.log(myMon);
+// myMon = new Xatu()
+// console.log(myMon);
+
+const pokemonInventory = [
+   new Absol(), 
+   new Bulbasaur(),
+   new Charmander(),
+   new Ditto(),
+   new Eevee(),
+   new Furret(),
+   new Goodra(),
+   new Heracross(),
+   new Ivysaur(),
+   new Joltik(),
+   new Kadabra(),
+   new Lapras(),
+   new Metagross(),
+   new Ninetails(),
+   new Onix(),
+   new Pikachu(),
+   new Quilava(),
+   new Ribombee(),
+   new Scorbunny(),
+   new Tropius(),
+   new Umbreon(),
+   new Venusaur(),
+   new Wishiwashi(),
+   new Xatu(),
+   new Yamask()
+]
+
+pokemonInventory.push(new Zeraora())
+
+console.log(pokemonInventory);
